@@ -1,31 +1,28 @@
 const Main = ({ figure, shirt, levelUp, pos, cd }) => {
 
 
-
-    console.log("Cosa arriva dentro figure?:", figure);
-
     return (
         <main>
-            <ul>
-                <li>
+            <ul className="interactionTab">
+                <li className="liTab">
                     <img src={figure} alt="figure" />
-                    <p>digital comics</p>
+                    <p className="pTab">digital comics</p>
                 </li>
-                <li>
+                <li className="liTab">
                     <img src={shirt} alt="shirt" />
-                    <p>dc merchandise</p>
+                    <p className="pTab">dc merchandise</p>
                 </li>
-                <li>
+                <li className="liTab">
                     <img src={levelUp} alt="levelUp" />
-                    <p>subscription</p>
+                    <p className="pTab">subscription</p>
                 </li>
-                <li>
+                <li className="liTab">
                     <img src={pos} alt="pos" />
-                    <p>comic shop locator</p>
+                    <p className="pTab">comic shop locator</p>
                 </li>
-                <li>
+                <li className="liTab">
                     <img src={cd} alt="cards" />
-                    <p>dc power visa</p>
+                    <p className="pTab">dc power visa</p>
                 </li>
             </ul>
         </main>
