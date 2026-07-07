@@ -1,8 +1,10 @@
-const Main = ({ figure, shirt, levelUp, pos, cd }) => {
+const Main = ({ figure, shirt, levelUp, pos, cd, }) => {
 
 
     return (
         <main>
+
+            
             <ul className="interactionTab">
                 <li className="liTab">
                     <img src={figure} alt="figure" />

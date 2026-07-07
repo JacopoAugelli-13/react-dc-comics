@@ -46,7 +46,7 @@ const Footer = ({ backG, backDC, faceB, TT, YT, pint, perip }) => {
         </div>
 
         <div className="downBar">
-            <div className="btn">
+            <div className="btn-3">
                 <button id="sign">sign-up now!</button>
             </div>
             <div className="info"><h3 className="h3">follow us</h3>
