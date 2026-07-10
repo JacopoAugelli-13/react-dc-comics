@@ -1,6 +1,25 @@
 import comics from './comics'
 
-const Header = ({ logoDC, jumbo }) => (
+
+
+
+const Header = ({ logoDC, jumbo }) => {
+    const fumetti = comics.map(props => {
+        return (
+        <div key={props.key} className="contents">
+            <ul className="ulContent">
+                <li className="licontent"> <img src={props.thumb} alt={props.title} />
+                    <h5 className="titleFumetti">{props.title}</h5>
+                </li>
+            </ul>
+
+
+        </div>
+        )
+    });
+
+// ritorno dell'intero header con la props fatta
+return (
     <header>
         <img src={logoDC} alt="logoDc" />
 
@@ -24,20 +43,13 @@ const Header = ({ logoDC, jumbo }) => (
 
         <button className="btn">Current series</button>
 
-
         <div className="content">
-            {comics.map(comic => (
-                <div key={comic.kid} className='container grid'>
-                    <ul className="ulContent">
-                        <li className="liContent"><img src={comic.thumb} alt={comic.title} />
-                            <h5 className="titleFumetti">{comic.title}</h5>
-                        </li>
-                    </ul>
-                </div>
-            ))}
+            {fumetti}
         </div>
+
+
         <button className="btn2">Load more</button>
     </header>
-)
+)};
 
 export default Header;

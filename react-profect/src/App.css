@@ -118,6 +118,9 @@ img[alt="logo"] {
 .liContent {
   width: 120px;
 }
+.contents{
+  width: 150px;
+}
 
 .titleFumetti {
    font-weight: 10px;
